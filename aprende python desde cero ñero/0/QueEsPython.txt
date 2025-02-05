@@ -1,0 +1,8 @@
+Python es un lenguaje de programación muy popular y versátil. Es conocido por ser:
+
+Fácil de aprender y usar, con una sintaxis clara y legible que se parece mucho al pseudocódigo o al inglés natural.
+Multipropósito: Se puede usar para desarrollo web, análisis de datos, inteligencia artificial, automatización, aplicaciones de escritorio y mucho más.
+Interpretado: No necesita ser compilado antes de ejecutarse, lo que facilita probar y modificar el código rápidamente.
+Rico en bibliotecas: Tiene una enorme colección de módulos y paquetes adicionales que amplían sus capacidades (como NumPy para cálculos científicos o Django para desarrollo web).
+
+Python fue creado por Guido van Rossum y se lanzó por primera vez en 1991. Su nombre viene de la serie de comedia Monty Python, no de la serpiente.
