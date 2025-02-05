@@ -1,2 +1,0 @@
-# aprende-Python
-aprende python
