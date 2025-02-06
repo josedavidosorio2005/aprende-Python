@@ -1,0 +1,30 @@
+Instalación de Python
+Descarga la versión más reciente de Python desde el sitio web oficial: https://www.python.org/downloads/
+
+Ejecuta el instalador y sigue las instrucciones en pantalla. Asegúrate de marcar la opción "Agregar Python al PATH" durante la instalación.
+
+Una vez finalizada la instalación, abre una terminal o línea de comandos y verifica que Python se haya instalado correctamente ejecutando el siguiente comando:
+
+Copiar
+python --version
+Deberías ver la versión de Python instalada.
+
+Instalación de Visual Studio Code (VS Code)
+Descarga Visual Studio Code desde el sitio web oficial: https://code.visualstudio.com/
+Ejecuta el instalador y sigue las instrucciones en pantalla.
+Una vez finalizada la instalación, abre VS Code.
+Configuración de VS Code para Python
+En VS Code, ve a la sección de extensiones (icono de cuatro cuadrados en la barra lateral izquierda).
+Busca y selecciona la extensión "Python" de Microsoft.
+Haz clic en "Instalar" para instalar la extensión de Python.
+Una vez instalada la extensión, VS Code debería reconocer automáticamente la instalación de Python en tu sistema.
+Crear y ejecutar un programa Python en VS Code
+Abre VS Code y crea un nuevo archivo con la extensión .py (por ejemplo, hola_mundo.py).
+
+Escribe el siguiente código en el archivo:
+
+Copiar
+print("¡Hola, mundo!")
+Guarda el archivo.
+
+Para ejecutar el programa, presiona Ctrl+F5 (Windows/Linux) o Cmd+F5 (Mac). Esto abrirá una nueva ventana de terminal y ejecutará tu programa Python.
