@@ -1,0 +1,55 @@
+Clase: Variables en Python
+1. ¿Qué es una variable?
+Una variable es como una caja donde podemos guardar información. Esta información puede ser números, texto o cualquier otro tipo de dato. Cada variable tiene un nombre que nosotros elegimos.
+2. Reglas básicas para nombrar variables
+
+Usar letras, números y guiones bajos
+No pueden empezar con números
+No utilizar espacios
+No usar palabras reservadas de Python (como 'if', 'for', ' while', etc.)
+3. Ejemplos prácticos
+# Variables con números
+edad = 25                    # Número entero
+altura = 1.75               # Número decimal
+numero_telefono = 912345678 # Número largo
+
+# Variables con texto (strings)
+nombre = "María"
+apellido = 'González'
+direccion = "Calle Principal 123"
+
+# Variables booleanas (verdadero/falso)
+es_estudiante = True
+tiene_mascota = False
+
+4. Operaciones con variables
+# Operaciones con números
+edad = 25
+nueva_edad = edad + 5    # nueva_edad será 30
+
+# Operaciones con texto
+nombre = "Juan"
+apellido = "Pérez"
+nombre_completo = nombre + " " + apellido    # "Juan Pérez"
+
+# Cambiando el valor de una variable
+contador = 0
+contador = contador + 1  # Aumenta en 
+
+5. Ejercicio práctico para practicar
+# Crear un programa simple que calcule la edad en el 2030
+año_actual = 2024
+año_nacimiento = 1995
+
+edad_futura = 2030 - año_nacimiento
+print("En el año 2030 tendrás:", edad_futura, "años")
+
+6. Verificar el tipo de variable
+nombre = "Ana"
+edad = 25
+altura = 1.68
+
+# Usando type() para ver el tipo de variable
+print(type(nombre))    # <class 'str'>
+print(type(edad))      # <class 'int'>
+print(type(altura))    # <class 'float'>
