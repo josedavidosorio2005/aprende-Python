@@ -1,0 +1,242 @@
+PEP 8 - Guía de estilo para Python
+1. INDENTACIÓN Y ESPACIADO
+Reglas básicas:
+
+Usar 4 espacios por nivel de sangría
+No utilizar tabuladores
+Líneas limitadas a 79 caracteres (código)
+Líneas limitadas a 72 caracteres (docstrings/comentarios)
+Dejar 2 líneas en blanco antes de clases y funciones de nivel superior
+Dejar 1 línea en blanco entre métodos de clase
+
+
+# MAL
+def funcion():
+   return  # 3 espacios
+
+# BIEN
+def funcion():
+    return  # 4 espacios
+
+# MAL - sin espacios entre funciones
+def funcion1():
+    pass
+def funcion2():
+    pass
+
+# BIEN - con espacios adecuados
+def funcion1():
+    pass
+
+
+def funcion2():
+    pass
+
+
+2. IMPORTACIONES
+Reglas:
+
+Cada importación en una línea separada
+Orden: módulos estándar, módulos terceros, módulos locales
+Siempre al principio del archivo
+
+# MAL
+import sys, os, json
+
+# BIEN
+import json
+import os
+import sys
+
+# Orden correcto
+import os                  # módulo estándar
+import numpy as np        # módulo tercero
+from miapp import modulo  # módulo local
+
+
+3. NOMBRES Y CONVENCIONES
+Variables y funciones:
+
+Minúsculas con guiones bajos: mi_variable,calcular_total()
+
+Clases:
+
+Caso Camel: MiClase,CalculadoraImpuestos
+
+Constantes:
+
+Mayúsculas con guiones bajos: MAX_VALOR,PI
+
+# MAL
+def CalcularTotal():
+    pass
+
+miClase = 'valor'
+MAXVALOR = 100
+
+# BIEN
+def calcular_total():
+    pass
+
+mi_variable = 'valor'
+MAX_VALOR = 100
+
+class CalculadoraImpuestos:
+    pass
+
+
+4. ESPACIOS EN EXPRESIONES
+Reglas:
+
+Espacio después del coma
+Sin espacio antes del coma
+Espacio alrededor de operadores
+
+# MAL
+x=1
+lista=[1,2,3]
+def funcion(x,y,z):
+    pass
+
+# BIEN
+x = 1
+lista = [1, 2, 3]
+def funcion(x, y, z):
+    pass
+
+
+. COMENTARIOS
+Reglas:
+
+Deben ser oraciones completas
+Empezar con mayúscula
+Usar # y un espacio
+Línea en blanco antes de comentarios.
+
+# MAL
+#esto es un comentario
+def funcion(): # hace algo
+    pass
+
+# BIEN
+# Esto es un comentario que explica la función
+def funcion():
+    # Realiza el cálculo del total
+    pass
+
+EJERCICIOS PRÁCTICOS
+
+Corrija el estilo de este código:
+# Código a corregir
+def Calcular_suma(x,y):
+    resultado=x+y
+    return resultado
+def mostrarResultado(res):
+  print('El resultado es:',res)
+Lista=[1,2,3]
+MAXIMOVALOR=100
+
+Solución:
+# Calcula la suma de dos números
+def calcular_suma(x, y):
+    resultado = x + y
+    return resultado
+
+
+def mostrar_resultado(res):
+    print('El resultado es:', res)
+
+
+lista = [1, 2, 3]
+MAXIMO_VALOR = 100
+
+
+Corrija el estilo de esta clase:
+
+# Código a corregir
+class gestorArchivos:
+    def __init__(self,nombre):
+        self.nombre=nombre
+    def Leer(self):
+        with open(self.nombre,'r') as f:
+            return f.read()
+    def Escribir(self,contenido):
+        with open(self.nombre,'w') as f:
+            f.write(contenido)
+
+
+Solución:
+class GestorArchivos:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def leer(self):
+        with open(self.nombre, 'r') as archivo:
+            return archivo.read()
+
+    def escribir(self, contenido):
+        with open(self.nombre, 'w') as archivo:
+            archivo.write(contenido)
+
+
+EJERCICIO FINAL DE PRÁCTICA
+Corrige y mejora este código siguiendo PEP 8:
+
+import random,sys,os
+class jugador:
+    def __init__(self,Nombre,Edad,score):
+        self.nombre=Nombre
+        self.edad=Edad
+        self.puntuacion=score
+    def actualizarScore(self,nuevoPuntaje):
+        self.puntuacion+=nuevoPuntaje
+    def mostrarInfo(self):
+        print('Jugador:',self.nombre,'Edad:',self.edad,'Puntuación:',self.puntuacion)
+def crearJugador():
+    n=input('Nombre: ')
+    e=int(input('Edad: '))
+    return jugador(n,e,0)
+
+
+Solución:
+
+import os
+import random
+import sys
+
+
+class Jugador:
+    """Clase que representa un jugador en el juego."""
+    
+    def __init__(self, nombre, edad, score=0):
+        self.nombre = nombre
+        self.edad = edad
+        self.puntuacion = score
+
+    def actualizar_score(self, nuevo_puntaje):
+        """Actualiza la puntuación del jugador."""
+        self.puntuacion += nuevo_puntaje
+
+    def mostrar_info(self):
+        """Muestra la información del jugador."""
+        print(
+            f'Jugador: {self.nombre}, '
+            f'Edad: {self.edad}, '
+            f'Puntuación: {self.puntuacion}'
+        )
+
+
+def crear_jugador():
+    """
+    Crea un nuevo jugador con la información proporcionada por el usuario.
+    
+    Returns:
+        Jugador: Nueva instancia de la clase Jugador.
+    """
+    nombre = input('Nombre: ')
+    try:
+        edad = int(input('Edad: '))
+        return Jugador(nombre, edad)
+    except ValueError:
+        print("Error: La edad debe ser un número entero")
+        return None
