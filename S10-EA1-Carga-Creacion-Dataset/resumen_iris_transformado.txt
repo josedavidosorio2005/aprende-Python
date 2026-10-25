@@ -1,0 +1,43 @@
+RESUMEN DEL DATASET IRIS TRANSFORMADO
+==========================================
+Filas: 113
+Columnas: 6
+
+COLUMNAS Y TIPOS DE DATOS
+----------------------------
+- largo_sepalo_cm: float64
+- ancho_sepalo_cm: float64
+- largo_petalo_cm: float64
+- ancho_petalo_cm: float64
+- especie: str
+- area_petalo_aprox_cm2: float64
+
+VALORES NULOS POR COLUMNA
+----------------------------
+- largo_sepalo_cm: 0
+- ancho_sepalo_cm: 0
+- largo_petalo_cm: 0
+- ancho_petalo_cm: 0
+- especie: 0
+- area_petalo_aprox_cm2: 0
+Total de valores nulos: 0
+Filas duplicadas: 1
+
+ESTADÍSTICAS DESCRIPTIVAS (COLUMNAS NUMÉRICAS)
+------------------------------------------------
+       largo_sepalo_cm  ancho_sepalo_cm  largo_petalo_cm  ancho_petalo_cm  area_petalo_aprox_cm2
+count           113.00           113.00           113.00           113.00                 113.00
+mean              6.12             2.94             4.53             1.52                   7.59
+std               0.74             0.38             1.29             0.59                   4.04
+min               4.70             2.00             1.60             0.20                   0.32
+25%               5.60             2.70             4.00             1.30                   5.20
+50%               6.10             3.00             4.70             1.50                   7.20
+75%               6.60             3.20             5.40             2.00                  10.44
+max               7.90             3.90             6.90             2.50                  15.87
+
+CANTIDAD DE REGISTROS POR ESPECIE
+---------------------------------
+especie
+Iris-virginica     50
+Iris-versicolor    50
+Iris-setosa        13
